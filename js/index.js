@@ -21,11 +21,17 @@ function getYear() {
 }
 
 function getMonth() {
-  
+  let month = monthRes.value;
+  if (month <= 0 || month > 12 ){
+    alert("Enter a valid month!");
+  }
+  else {
+    alert(`You were born on this month: ${month}`);
+  }
 }
 
 function getDate() {
- 
+
 }
 
 function getGender(gender) {
