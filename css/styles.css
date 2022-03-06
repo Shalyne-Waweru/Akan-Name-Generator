@@ -68,3 +68,38 @@ body, html {
   transform: translate(-50%, -50%);
   margin-top: 50px;
 }
+
+/* Form Layout: Left Info */
+
+.left-info {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  width: 50%;
+  background-image: url(../images/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  opacity: 0.8;
+}
+
+.top {
+  display: flex;
+  justify-content: center;
+}
+
+.top img {
+  width: 100px;
+  height: 100px;
+  margin-top: 150px;
+  margin-left: 100px;
+}
+
+.ready-text {
+  margin-top: 170px;
+  margin-left: 0px;
+  text-align: center;
+  line-height: 0.3;
+}
