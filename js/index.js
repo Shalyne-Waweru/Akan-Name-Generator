@@ -31,7 +31,13 @@ function getMonth() {
 }
 
 function getDate() {
-
+  let date = dateRes.value;
+  if (date <= 0 || date > 31 ){
+    alert("Enter a valid date!");
+  }
+  else {
+    alert(`You were born on this day: ${date}`);
+  }
 }
 
 function getGender(gender) {
