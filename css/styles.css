@@ -181,7 +181,7 @@ form {
   border: 1px solid black;
 }
 
-button {
+.btn {
   background-color: blue;
   color: white;
   font-size: 18px;

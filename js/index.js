@@ -1,25 +1,36 @@
+//Getting the Inputs from a user
+let centuryRes = document.getElementById('centuryDigits');
+let yearRes = document.getElementById('yearDigits');
+let monthRes = document.getElementById('month');
+let dateRes = document.getElementById('date');
+let genderRes = document.getElementById("genderResult");
+
 function getCentury() {
-  let century = document.getElementById('centuryDigits').value;
-  alert(`You were born in the ${century}th century`);
+  let century = centuryRes.value;
+  if (century < 18 || century > 20 ){
+    alert("Enter a valid century between 18 and 20!");
+  }
+  else{
+    alert(`You were born in the ${centuryDigits}th century`);
+  }
 }
 
 function getYear() {
-  let year = document.getElementById('yearDigits').value;
+  let year = yearRes.value;
   alert(`You were born in the year ${year}`);
 }
 
 function getMonth() {
-  let month = document.getElementById('month').value;
-  alert(`You were born in this month: ${month}`);
+  
 }
 
-function getDay() {
-  let day = document.getElementById('day').value;
-  alert(`You were born on this day: ${day}`);
+function getDate() {
+ 
 }
 
 function getGender(gender) {
-  document.getElementById("genderResult").value = gender;
+  genderRes.value = gender;
   let selectedGender = gender;
   alert(`You are a ${selectedGender}`);
 }
+
