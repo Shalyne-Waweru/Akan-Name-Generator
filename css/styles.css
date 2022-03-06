@@ -167,6 +167,20 @@ form {
   border: 1px solid black;
 }
 
+.genderSelection {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#genderResult {
+  width: 150px;
+  height: 40px;
+  margin-left: 10px;
+  background-color: aliceblue;
+  border: 1px solid black;
+}
+
 button {
   background-color: blue;
   color: white;

@@ -47,23 +47,24 @@
 
         <form action="#">
           <label for="centuryDigits">Enter your century digits:</label><br>
-          <input class="changeWidth" type="number" id="centuryDigits" name="centuryDigits"><br><br>
+          <input class="changeWidth" type="number" id="centuryDigits" name="centuryDigits" onblur="getCentury()"><br><br>
 
           <label for="yearDigits">Enter your year digits:</label><br>
-          <input class="changeWidth" type="number" id="yearDigits" name="yearDigits"><br><br>
+          <input class="changeWidth" type="number" id="yearDigits" name="yearDigits" onblur="getYear()"><br><br>
 
           <label for="month">Enter the month you were born:</label><br>
-          <input class="changeWidth" type="number" id="month" name="month"><br><br>
+          <input class="changeWidth" type="number" id="month" name="month" onblur="getMonth()"><br><br>
 
           <label for="day">Enter the day of the month in which you were born:</label><br>
-          <input class="changeWidth" type="number" id="day" name="day"><br>
+          <input class="changeWidth" type="number" id="day" name="day" onblur="getDay()"><br>
 
-          <p>Select your gender:</p>
-          <input type="radio" id="male" name="gender">
-          <label for="male">Male</label><br>
+          <div class="genderSelection">
+            <p>Select your gender:</p>
+            <input type="text" id="genderResult">
+          </div>  
 
-          <input type="radio" id="female" name="gender">
-          <label for="female">Female</label><br><br>
+          <input type="radio" name="gender" onclick="getGender(this.value)" value="Male">Male<br>
+          <input type="radio" name="gender" onclick="getGender(this.value)" value="Female">Female<br><br>
 
           <button type="button">SUBMIT</button>
         </form> 
@@ -71,4 +72,5 @@
       
     </div>
   </body>
+  <script src="./js/index.js"></script>
 </html>
