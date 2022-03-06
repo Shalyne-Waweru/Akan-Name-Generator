@@ -5,6 +5,10 @@ let monthRes = document.getElementById('month');
 let dateRes = document.getElementById('date');
 let genderRes = document.getElementById("genderResult");
 
+//Outputs
+let bornDay = document.querySelector('#bornDay');
+let akanName = document.querySelector('#akanName');
+
 //Arrays
 let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
 let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
@@ -52,6 +56,22 @@ function getGender(gender) {
 }
 
 //Manipulating the user's inputs
-function submitForm(selectedGender){
-
+function submitForm(){
+ while(genderRes.value === "Male"){
+   
+   if(monthRes.value == 1){
+     bornDay.innerText = "You were born on: " + daysOfTheWeek[0];
+     akanName.innerText = "Your Akan Name is: " + maleNames[0];
+     return;
+   }
+   if(monthRes.value == 2){
+    bornDay.innerText = "You were born on: " + daysOfTheWeek[1];
+    akanName.innerText = "Your Akan Name is: " + maleNames[1];
+    return;
+  }
+   else{
+     alert("coming soon");
+   }
+   break;
+ }
 }
