@@ -57,7 +57,7 @@ function getGender(gender) {
 
 //Manipulating the user's inputs
 function submitForm(){
- //Male Akan names display on January-July
+ //Male Akan names display on January-June
  while(genderRes.value === "Male" && monthRes.value <= 7){
    
    if(monthRes.value == 1){
@@ -90,13 +90,8 @@ function submitForm(){
     akanName.innerText = "Your Akan Name is: " + maleNames[5];
     return;
   }
-  if(monthRes.value == 7){
-    bornDay.innerText = "You were born on: " + daysOfTheWeek[6];
-    akanName.innerText = "Your Akan Name is: " + maleNames[6];
-    return;
-  }
   else{
-    alert("You must be a male born between January and July!");
+    alert("You must be a male born between January and June!");
   }
   break;
  }
