@@ -20,7 +20,7 @@ function getCentury() {
     alert("Enter a valid century between 18 and 20!");
   }
   else{
-    alert(`You were born in the ${centuryDigits}th century`);
+    alert(`You were born in the ${century}th century`);
   }
 }
 
@@ -57,7 +57,8 @@ function getGender(gender) {
 
 //Manipulating the user's inputs
 function submitForm(){
- while(genderRes.value === "Male"){
+ //Male Akan names display on January-July
+ while(genderRes.value === "Male" && monthRes.value <= 7){
    
    if(monthRes.value == 1){
      bornDay.innerText = "You were born on: " + daysOfTheWeek[0];
@@ -69,9 +70,34 @@ function submitForm(){
     akanName.innerText = "Your Akan Name is: " + maleNames[1];
     return;
   }
-   else{
-     alert("coming soon");
-   }
-   break;
+  if(monthRes.value == 3){
+    bornDay.innerText = "You were born on: " + daysOfTheWeek[2];
+    akanName.innerText = "Your Akan Name is: " + maleNames[2];
+    return;
+  }
+  if(monthRes.value == 4){
+    bornDay.innerText = "You were born on: " + daysOfTheWeek[3];
+    akanName.innerText = "Your Akan Name is: " + maleNames[3];
+    return;
+  }
+  if(monthRes.value == 5){
+    bornDay.innerText = "You were born on: " + daysOfTheWeek[4];
+    akanName.innerText = "Your Akan Name is: " + maleNames[4];
+    return;
+  }
+  if(monthRes.value == 6){
+    bornDay.innerText = "You were born on: " + daysOfTheWeek[5];
+    akanName.innerText = "Your Akan Name is: " + maleNames[5];
+    return;
+  }
+  if(monthRes.value == 7){
+    bornDay.innerText = "You were born on: " + daysOfTheWeek[6];
+    akanName.innerText = "Your Akan Name is: " + maleNames[6];
+    return;
+  }
+  else{
+    alert("You must be a male born between January and July!");
+  }
+  break;
  }
 }
