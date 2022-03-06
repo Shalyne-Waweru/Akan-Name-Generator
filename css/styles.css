@@ -159,6 +159,14 @@ form {
   margin-left: 150px;
 }
 
+.changeWidth {
+  width: 450px;
+  height: 40px;
+  margin-top: 5px;
+  background-color: aliceblue;
+  border: 1px solid black;
+}
+
 button {
   background-color: blue;
   color: white;
