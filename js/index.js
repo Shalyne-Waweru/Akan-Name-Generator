@@ -5,6 +5,11 @@ let monthRes = document.getElementById('month');
 let dateRes = document.getElementById('date');
 let genderRes = document.getElementById("genderResult");
 
+//Arrays
+let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+let daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
 function getCentury() {
   let century = centuryRes.value;
   if (century < 18 || century > 20 ){
@@ -46,3 +51,7 @@ function getGender(gender) {
   alert(`You are a ${selectedGender}`);
 }
 
+//Manipulating the user's inputs
+function submitForm(selectedGender){
+
+}
