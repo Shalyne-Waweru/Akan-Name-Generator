@@ -58,7 +58,7 @@ function getGender(gender) {
 //Manipulating the user's inputs
 function submitForm(){
  //Male Akan names display on January-June
- while(genderRes.value === "Male" && monthRes.value <= 7){
+ while(genderRes.value === "Male" && monthRes.value < 7){
    
    if(monthRes.value == 1){
      bornDay.innerText = "You were born on: " + daysOfTheWeek[0];
@@ -95,4 +95,43 @@ function submitForm(){
   }
   break;
  }
+
+ //Female Akan names display on July-December
+ while(genderRes.value === "Female" && monthRes.value >= 7){
+   
+  if(monthRes.value == 7){
+    bornDay.innerText = "You were born on: " + daysOfTheWeek[0];
+    akanName.innerText = "Your Akan Name is: " + femaleNames[0];
+    return;
+  }
+  if(monthRes.value == 8){
+   bornDay.innerText = "You were born on: " + daysOfTheWeek[1];
+   akanName.innerText = "Your Akan Name is: " + femaleNames[1];
+   return;
+ }
+ if(monthRes.value == 9){
+   bornDay.innerText = "You were born on: " + daysOfTheWeek[2];
+   akanName.innerText = "Your Akan Name is: " + femaleNames[2];
+   return;
+ }
+ if(monthRes.value == 10){
+   bornDay.innerText = "You were born on: " + daysOfTheWeek[3];
+   akanName.innerText = "Your Akan Name is: " + femaleNames[3];
+   return;
+ }
+ if(monthRes.value == 11){
+   bornDay.innerText = "You were born on: " + daysOfTheWeek[4];
+   akanName.innerText = "Your Akan Name is: " + femaleNames[4];
+   return;
+ }
+ if(monthRes.value == 12){
+   bornDay.innerText = "You were born on: " + daysOfTheWeek[5];
+   akanName.innerText = "Your Akan Name is: " + femaleNames[5];
+   return;
+ }
+ else{
+   alert("You must be a female born between July and December!");
+ }
+ break;
+}
 }
