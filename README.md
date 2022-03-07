@@ -1,5 +1,5 @@
 # Akan-Name-Generator
-![](images/akan-website.png)
+![](images/akan-generator-website.png)
 
 ## Project Description
 It's a web application that takes in a user's birthday and calculates the day of the week they were born and then depending on their gender, it outputs their Akan Name. Akan names are derived from the Ghanian culture whereby children are given their first name as a 'day name' which corresponds to the day in the week they were born. The Ghanian day names are shown below:-
@@ -21,8 +21,6 @@ It's a web application that takes in a user's birthday and calculates the day of
 - Thursday:  Yaa
 - Friday: Afua
 - Saturday: Ama
-
-The website displays male Akan Names for males born between January and June and female Akan Names for females born between July and December.
 
 ## Figma Design Link
 - [Go to Figma](https://www.figma.com/file/xUCLYXtYLbvf91j2kdOTJ4/Akan-Name-Generator?node-id=0%3A1)
@@ -48,22 +46,18 @@ To start using this project use the following commands:
 - Javascript
 
 ## Behaviour Driven Development
-+ BEHAVIOUR: Display a form for entering the century, year, month, date and gender
-    * INPUT: "User's birthday Century, Year, Month and Date"
++ BEHAVIOUR: Display a form for picking date and gender
+    * INPUT: "User's date of birth"
     * INPUT: "User's selected gender"
-    * OUTPUT: "Display a User's Akan Name According to Submitted Month and Gender"
+    * OUTPUT: "Display the user's Akan Name according to their gender"
     
- + BEHAVIOUR: Display an alert error message if the century entered is invalid
-    * INPUT: "21"
-    * OUTPUT: "Enter a valid century between 18 and 20!"
+ + BEHAVIOUR: Displays an alert error message if the date picker is left blank
+    * INPUT: ""
+    * OUTPUT: "Pick your birth date!"
 
- + BEHAVIOUR: Display an alert error message if the month entry is invalid
-    * INPUT: "14"
-    * OUTPUT: "Enter a valid month!"
-
- + BEHAVIOUR: Display an alert error message if the date entry is invalid
-    * INPUT: "0"
-    * OUTPUT: "Enter a valid date!"
+ + BEHAVIOUR: Displays an alert error message if the gender is not selected
+    * INPUT: ""
+    * OUTPUT: "Select your gender!"
 
 ## License info
 MIT License
