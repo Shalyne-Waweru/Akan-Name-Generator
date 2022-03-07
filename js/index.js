@@ -33,14 +33,27 @@ function submitForm(){
   let dayBorn = new Date(dob);
   let day = dayBorn.getDay();
 
+  if(dob == ""){
+    alert("Pick your birth date!");
+    return;
+  }
+
   let selectedGender = document.getElementById("genderResult").value;
 
-    if (selectedGender == "Male") {
-      bornDay.innerText = "You were born on: " + daysOfTheWeek[day];
-      akanName.innerText = "Your Akan Name is: " + maleNames[day];
+  if(selectedGender == ""){
+    alert("Select your gender!");
+    return;
+  }
 
-    } else if (selectedGender == "Female") {
-      bornDay.innerText = "You were born on: " + daysOfTheWeek[day];
-      akanName.innerText = "Your Akan Name is: " + femaleNames[day];
-    }
+  if (selectedGender == "Male") {
+    bornDay.innerText = "You were born on: " + daysOfTheWeek[day];
+    akanName.innerText = "Your Akan Name is: " + maleNames[day];
+    return;
+
+  } 
+  if (selectedGender == "Female") {
+    bornDay.innerText = "You were born on: " + daysOfTheWeek[day];
+    akanName.innerText = "Your Akan Name is: " + femaleNames[day];
+    return;
+  }
 }
