@@ -47,6 +47,24 @@ To start using this project use the following commands:
 - Google Fonts
 - Javascript
 
+## Behaviour Driven Development
++ BEHAVIOUR: Display a form for entering the century, year, month, date and gender
+    * INPUT: "User's birthday Century, Year, Month and Date"
+    * INPUT: "User's selected gender"
+    * OUTPUT: "Display a User's Akan Name According to Submitted Month and Gender"
+    
+ + BEHAVIOUR: Display an alert error message if the century entered is invalid
+    * INPUT: "21"
+    * OUTPUT: "Enter a valid century between 18 and 20!"
+
+ + BEHAVIOUR: Display an alert error message if the month entry is invalid
+    * INPUT: "14"
+    * OUTPUT: "Enter a valid month!"
+
+ + BEHAVIOUR: Display an alert error message if the date entry is invalid
+    * INPUT: "0"
+    * OUTPUT: "Enter a valid date!"
+
 ## License info
 MIT License
 
