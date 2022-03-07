@@ -24,6 +24,9 @@ It's a web application that takes in a user's birthday and calculates the day of
 
 The website displays male Akan Names for males born between January and June and female Akan Names for females born between July and December.
 
+## Figma Design Link
+- [Check it out here](https://www.figma.com/file/xUCLYXtYLbvf91j2kdOTJ4/Akan-Name-Generator?node-id=0%3A1)
+
 ## Website Link
 - [Check it out here](https://shalyne-waweru.github.io/My-Portfolio/)
 
