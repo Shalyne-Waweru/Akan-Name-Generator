@@ -1,4 +1,5 @@
 # Akan-Name-Generator
+![](images/akan-website.png)
 
 ## Project Description
 It's a web application that takes in a user's birthday and calculates the day of the week they were born and then depending on their gender, it outputs their Akan Name. Akan names are derived from the Ghanian culture whereby children are given their first name as a 'day name' which corresponds to the day in the week they were born. The Ghanian day names are shown below:-
