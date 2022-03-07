@@ -20,13 +20,13 @@ function getCentury() {
     alert("Enter a valid century between 18 and 20!");
   }
   else{
-    alert(`You were born in the ${century}th century`);
+    console.log(`You were born in the ${century}th century`);
   }
 }
 
 function getYear() {
   let year = yearRes.value;
-  alert(`You were born in the year ${year}`);
+  console.log(`You were born in the year ${year}`);
 }
 
 function getMonth() {
@@ -35,7 +35,7 @@ function getMonth() {
     alert("Enter a valid month!");
   }
   else {
-    alert(`You were born on this month: ${month}`);
+    console.log(`You were born on this month: ${month}`);
   }
 }
 
@@ -45,14 +45,14 @@ function getDate() {
     alert("Enter a valid date!");
   }
   else {
-    alert(`You were born on this day: ${date}`);
+    console.log(`You were born on this day: ${date}`);
   }
 }
 
 function getGender(gender) {
   genderRes.value = gender;
   let selectedGender = gender;
-  alert(`You are a ${selectedGender}`);
+  console.log(`You are a ${selectedGender}`);
 }
 
 //Manipulating the user's inputs
